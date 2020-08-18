@@ -1,0 +1,23 @@
+
+Organise the ILSVRC dataset for training
+
+Let’s take a look at the ILSVRC dataset. If you check the train directory, you will see 1,000 sub-directories, each of them holding images for a designated ImageNet category. The names of the sub-direcctories are quite strange. Therefore, users need to grab this file(https://github.com/juliensimon/aws/blob/master/mxnet/imagenet/synsets_with_descriptions.txt) to know what’s what, e.g. n01440764 is the category for fishes.
+
+
+
+ImageNet Discription:
+
+--build_validation_tree.h
+--synsets_with_descriptions.txt
+
+github: https://github.com/juliensimon/aws/tree/master/mxnet/imagenet
+medium: https://medium.com/@julsimon/imagenet-part-1-going-on-an-adventure-c0a62976dc72
+
+
+build_validation_tree.sh
+aws/mxnet/imagenet/build_validation_tree.sh
+https://github.com/juliensimon/aws/blob/master/mxnet/imagenet/build_validation_tree.sh
+
+
+
+

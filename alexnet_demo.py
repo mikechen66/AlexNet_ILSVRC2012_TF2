@@ -4,13 +4,9 @@
 AlexNet, Krizhevsky, Alex, Ilya Sutskever and Geoffrey E. Hinton, 2012
 https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
 
-Michael Guerzhoy and Davi Frossard, 2016
-AlexNet implementation in TensorFlow, with weights Details: 
-#http://www.cs.toronto.edu/~guerzhoy/tf_alexnet/
-
-The script is the realizatio of object oriented style of AlexNet. The construction method of AlexNet 
-includes three parameters, including self, input_shape, num_classes, of which, input_shape works as a 
-placeholder. 
+The script is the realization of object-oriented style of AlexNet. The construction method of AlexNet 
+includes three parameters, including self, input_shape, num_classes. It is a typical tensorflow.keras 
+usage. 
 """
 
 
@@ -21,6 +17,7 @@ import tensorflow.keras.metrics
 import functools
 
 
+# Realize the model with the 1000 classes 
 num_classes = 1000
 
 # Set up the top 5 error rate metric.

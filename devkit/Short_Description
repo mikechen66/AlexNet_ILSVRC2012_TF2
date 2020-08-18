@@ -1,0 +1,61 @@
+Description:
+
+It includes the auxilary materials for role playing on the ILSVRC2012. Some of the material are duplicate. However, it is useful for users to get to know the usage of ILSVRC images and files. Becuase it lacks of comprehensive code descripiton of the ILSVRC 2012 Championship in both Google and Github. Users are hard to get to know what has happened with the ISLVRC2012. Most of the develpers aopted a quite small dataset to conduct the role play on the AlexNet. In contrast, very few developers has a deep dive on the AlexNet with so huge dataset(160 GB). Therefore, user can take the following information for reference.  
+
+
+1.Script to extract ImageNet dataset
+
+ilsvrc_untar.sh:for the first-order file(s). 
+ilsvrc_classes_untar.sh for the second-order files(1000 tars related to 1000 classes) included in 
+ILSVRC2012_img_train.tar. 
+
+ILSVRC2012_img_train.tar (about 138 GB)
+ILSVRC2012_img_val.tar (about 6.3 GB)
+ILSVRC2012_img_test.tar (about 13.7 GB)
+Please make sure the three tar files in your current directory and use the CD command to operate the files. 
+
+#  train/
+#  ├── n01440764
+#  │   ├── n01440764_10026.JPEG
+#  │   ├── n01440764_10027.JPEG
+#  │   ├── ......
+#  ├── ......
+#  val/
+#  ├── n01440764
+#  │   ├── ILSVRC2012_val_00000293.JPEG
+#  │   ├── ILSVRC2012_val_00002138.JPEG
+#  │   ├── ......
+#  ├── ......
+
+
+2.data & evaluation
+
+Both the two of the files are auxiary for the role play with the AlexNet on the ISLVRC. 
+
+
+3.Other relates materials 
+
+Implementing AlexNet on ImageNet for ILSVRC2012
+github: https://github.com/RonnieGandhi/Implementing-alexnet-trained-on--ImageNet-s-ILSVRC2012-datasets-using-Tensorflow/tree/master/Models
+
+Places CNN & Hybrid-AlexNet
+MIT: http://places.csail.mit.edu/downloadCNN.html
+Places205-AlexNet: AlexNet CNN trained on 205 scene categories of Places Database with  2.5 million images (this CNN is used in our NIPS’14 paper). Scene attribute detectors associated with the FC7 feature of the Places205-AlexNet could be downloaded here.
+
+Hybrid-AlexNet: AlexNet CNN trained on 1183 categories (205 scene categories from Places Database and 978 object categories from the train data of ILSVRC2012 (ImageNet) with  3.6 million images (this CNN is used in our NIPS’14 paper).
+
+Nvidia Digits for Imagenet(IlSVRC2012) Dataset
+github-io: https://jkjung-avt.github.io/ilsvrc2012-in-digits/
+nvidia blog: https://developer.nvidia.com/blog/image-segmentation-using-digits-5/
+
+images processiong 
+link: https://paperswithcode.com/sota/image-classification-on-imagenet
+
+
+dbcollection--readthedocs:
+link: https://dbcollection.readthedocs.io/en/latest/datasets/imagenet.html
+
+kaggle dataset for AlexNet 
+kaggle: https://www.kaggle.com/pytorch/alexnet?select=alexnet.pth
+
+

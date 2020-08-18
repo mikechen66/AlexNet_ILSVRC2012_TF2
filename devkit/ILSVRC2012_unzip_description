@@ -1,0 +1,141 @@
+ILSVRC files include the following the following files. Please use the command to unzip 
+the three first-order iamge files. For the rest of the files, users can directly extract 
+them into the same name files. 
+
+
+1. Unzip ILSVRC2012_img_train.tar
+
+1).Create a folder
+
+Folder Name: ILSVRC2012_img_train
+
+2).Unzip the first-order file 
+
+ILSVRC2012_img_train is the first-order files. 
+
+$ sudo tar -xvf ILSVRC2012_img_train.tar -C ./ILSVRC2012_img_train
+
+3). Unzip the second-order files 
+
+Users need to unzip the second-order files because the file holder of ILSVRC2012_img_train
+includes 1000-classe-tar files. Please use the shell file of ilsvrc_classes_untar.sh to 
+unzip the 1000 tar files. 
+
+(1).Put the file of ilsvrc_classes_untar.sh into the fileholder of ILSVRC2012_img_train
+
+The typical path is /media/drive/datasets/ImageNet2012/ILSVRC2012_img_train with regard to
+any huge files based on the Ubuntu 18.04 guidelines. 
+
+(2).Operate the current file holder
+
+$ cd /media/drive/datasets/ImageNet2012/ILSVRC2012_img_train
+
+(3).Execute the command as follows. 
+
+With the access authority 
+
+$ bash ilsvrc_classes_untar.sh
+
+or 
+
+Without the access authority 
+
+$ sudo bash ilsvrc_classes_untar.sh
+
+
+2. Unzip ILSVRC2012_img_val.tar 
+
+The tar file does not include the second filehodlers, so users can use either the 
+following command or ilsvrc_untar.sh to unzip the tar file. 
+
+1).Create a folder
+
+Folder Name: ILSVRC2012_img_val
+
+2).Unzip the folder 
+
+(1).Operate the current file holder
+
+$ cd /media/drive/datasets/ImageNet2012/ILSVRC2012_img_val
+
+(2).Unzip the file
+$ sudo tar -xvf ILSVRC2012_img_val.tar -C ./ILSVRC2012_img_val
+
+or 
+
+$ bash ilsvrc_untar.sh 
+
+
+3.Unzip ILSVRC2012_img_test.tar
+
+The tar file does not include the second-order fileholers, so users can use either 
+the following command or ilsvrc_untar.sh to unzip the files.
+
+1).Create a folder
+
+Folder Name: ILSVRC2012_img_test
+
+2).Unzip the folder 
+
+(1).Operate the current file holder
+
+$ cd /media/drive/datasets/ImageNet2012/ILSVRC2012_img_val
+
+(2).Unzip the file 
+
+$ sudo tar -xvf ILSVRC2012_img_test.tar -C ./ILSVRC2012_img_test
+
+or 
+
+$ bash ilsvrc_untar.sh 
+
+
+
+4.Unzip ILSVRC2012_bbox_train_v2.tar
+
+User can try to unzip the file with the above-mentioned command. However, the second-order
+folders are locked with lock marks. So it is convient to use the following steps to unzip
+the file. 
+
+1).Create a folder: ILSVRC2012_bbox_train_v2
+
+2).Double click the file 
+
+3).Extract the content to the above-mentioned folder 
+
+
+5.Unzip ILSVRC2012_devkit_t12.tar
+
+It is operated as same as the above-mentioned. 
+
+
+
+Notes: 
+
+ILSVRC2012_img_train.tar
+ILSVRC2012_img_train
+147.9G
+
+ILSVRC2012_img_val.tar
+ILSVRC2012_img_val
+6.7G
+
+ILSVRC2012_img_test.tar
+ILSVRC2012_img_test
+13.7G 
+
+ILSVRC2012_bbox_train_v2.tar
+ILSVRC2012_bbox_train_v2
+20.9M 
+
+ILSVRC2012_devkit_t12.tar
+ILSVRC2012_devkit_t12
+2.6M
+
+
+
+
+
+
+
+

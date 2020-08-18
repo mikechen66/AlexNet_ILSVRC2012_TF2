@@ -1,0 +1,28 @@
+
+ILSVRC2012 Datasets Download Description
+
+Users can either subscribe with an edu email address to apply to download 
+the ILSVRC2012 dataset from ImageNet or use any top-3 torrent client application 
+to download the dataset. It has the size of 160+ GiB and takes about 3~7 days to 
+download depending on your regions and network providers. 
+
+1. ImageNet 
+
+With regard to the official ImageNet, users can directly download from ImageNet 
+with the following download link. 
+
+http://image-net.org/download-images
+
+Goolge provides a non-stop tools to download the dataset, please follow up the 
+Google description witjh the following link. 
+
+https://www.tensorflow.org/datasets/catalog/imagenet2012
+
+
+2.Other channels
+
+Users can download the dataset from anyone of the top-3 torrents from the academic 
+torrents.com. 
+
+
+https://academictorrents.com/browse.php?search=ILSVRC2012

@@ -1,0 +1,25 @@
+Application Discription
+
+It is a typical DNN script to evaluate and predict the given images. The dataset downloaded from Kaggle has six classes including buildings, forest, glacier, mountain, sea and street. 
+
+1. How to realize the evalutuion and prediction
+
+We use the classify script to call the AlexNet model. The script includes three key fucntions inlcuding
+model.fit(), model.evaluate and model.predict(). If we do not use the augument, the accuract is quite high. In contract, the accuracy is quite low while adopting the data augument. It is most probably to require more epochs. 
+
+2.Review of the Datasets 
+
+This Data contains around 25k images of size 150x150 distributed under 6 categories.
+{'buildings' -> 0,
+'forest' -> 1,
+'glacier' -> 2,
+'mountain' -> 3,
+'sea' -> 4,
+'street' -> 5 }
+
+3.Discription of the Datasets
+
+The Train, Test and Prediction data is separated in each zip files. There are around 14k images in Train, 3k in Test and 7k in Prediction.
+This data was initially published on https://datahack.analyticsvidhya.com by Intel to host a Image classification Challenge.
+
+kaggle: https://www.kaggle.com/puneet6060/intel-image-classification/data#

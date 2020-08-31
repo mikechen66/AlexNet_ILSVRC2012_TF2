@@ -8,7 +8,7 @@ Michael Guerzhoy and Davi Frossard, 2016
 AlexNet implementation in TensorFlow, with weights Details: 
 #http://www.cs.toronto.edu/~guerzhoy/tf_alexnet/
 
-The script is the realizatio of object oriented style of AlexNet. The construction method of AlexNet 
+The script is the realization of object oriented style of AlexNet. The construction method of AlexNet 
 includes three parameters, including self, input_shape, num_classes, of which, input_shape works as a 
 placeholder. 
 """

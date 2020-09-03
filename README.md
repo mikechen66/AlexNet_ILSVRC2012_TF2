@@ -9,15 +9,3 @@ ILSVRC2012_img_val.tar (about 6.3 GB)
 ILSVRC2012_img_test.tar (about 13.7 GB)
 Please make sure the three tar files in your current directory and use the CD command to operate the files. 
 
-train/
-├── n01440764
-│   ├── n01440764_10026.JPEG
-│   ├── n01440764_10027.JPEG
-│   ├── ......
-├── ......
-val/
-├── n01440764
-│   ├── ILSVRC2012_val_00000293.JPEG
-│   ├── ILSVRC2012_val_00002138.JPEG
-│   ├── ......
-├── ......

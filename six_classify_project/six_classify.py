@@ -30,7 +30,7 @@ for gpu in gpus:
 
 # Give the global constants.Please notify BATCH_SIZE for model.fit() and Batch_Size for 
 # model.evaluate() and model.predict(). 
-EPOCHS = 64
+EPOCHS = 50
 BATCH_SIZE = 32
 Batch_Size = 1
 image_width = 227
@@ -52,9 +52,9 @@ model.summary()
 
 
 # The dataset inlcude the three directories 
-train_dir = '/home/mike/Documents/Six_Classification_AlexNet/seg_train/seg_train'
-test_dir = '/home/mike/Documents/Six_Classification_AlexNet/seg_test/seg_test'
-predict_dir = '/home/mike/Documents/Six_Classification_AlexNet/seg_pred/'
+train_dir = '/home/mike/Documents/Six_Classify_AlexNet/seg_train/seg_train'
+test_dir = '/home/mike/Documents/Six_Classify_AlexNet/seg_test/seg_test'
+predict_dir = '/home/mike/Documents/Six_Classify_AlexNet/seg_pred/'
 
 
 # keras.preprocessing.image.ImageDataGenerator
@@ -94,13 +94,13 @@ test_num = test_generator.samples
 
 
 # Evalute the trained model and return both loss and the test accuracy. 
-preds = model.evaluate(test_generator,
-                       verbose=1,
-                       batch_size=Batch_Size,
-                       steps=test_num//Batch_Size)
+evals = model.evaluate(test_generator,
+                        verbose=1,
+                        batch_size=Batch_Size,
+                        steps=test_num//Batch_Size)
 
-print("Loss = " + str(preds[0]))
-print("Test Accuracy = " + str(preds[1]))
+print("Loss = " + str(evals[0]))
+print("Test Accuracy = " + str(evals[1]))
 
 
 # Predict the classifcation given the implicit steps=7301 for selecting the specific image number. 
